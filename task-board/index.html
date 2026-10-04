@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Task Board sederhana: papan Scrum dengan drag & drop,Prioritas, label, dan jatuh tempo." />
+    <title>Task Board · Manajemen Tugas</title>
+    <script>
+      // Terapkan tema sebelum halaman digambar supaya tidak ada kedipan warna.
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('task-board.theme')
+          var dark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+        } catch (error) {
+          document.documentElement.dataset.theme = 'light'
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

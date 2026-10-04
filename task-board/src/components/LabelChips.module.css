@@ -1,0 +1,42 @@
+.list {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--inset);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+button.chip:hover {
+  color: var(--accent-text);
+  border-color: var(--accent);
+}
+
+.chip.active {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.remove {
+  padding: 0 2px;
+  font-size: 0.8125rem;
+  line-height: 1;
+  color: inherit;
+  background: none;
+  border: none;
+}
+
+.remove:hover {
+  color: var(--danger);
+}

@@ -1,0 +1,20 @@
+.app {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footnote {
+  color: var(--muted);
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 20px 14px 48px;
+  }
+}
